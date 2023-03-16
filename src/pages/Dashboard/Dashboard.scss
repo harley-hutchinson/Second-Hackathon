@@ -1,7 +1,16 @@
+@use "../../styles/partials/variables" as *;
+
 .dashboard {
-  padding: 0 1.6rem;
+  padding: 1.2rem 1.6rem;
+  background-color: $primary-charcoal;
+  color: $primary-text;
 
   &__heading {
     text-align: center;
+    margin: 0;
   }
+}
+
+.hero {
+  padding: 0.5rem 0 3rem 0;
 }

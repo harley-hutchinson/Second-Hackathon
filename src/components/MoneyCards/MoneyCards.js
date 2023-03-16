@@ -4,18 +4,18 @@ const MoneyCards = () => {
   return (
     <section className="money-cards">
       <article className="money-card">
-        <p className="money-card__money">£2,000</p>
-        <h3 className="money-card__heading">Income</h3>
+        <h3 className="money-card__money">£2,000</h3>
+        <p className="money-card__heading">Income</p>
       </article>
 
       <article className="money-card">
-        <p className="money-card__money">£1,000</p>
-        <h3 className="money-card__heading">Expenses</h3>
+        <h3 className="money-card__money">£1,000</h3>
+        <p className="money-card__heading">Expenses</p>
       </article>
 
       <article className="money-card">
-        <p className="money-card__money">£1,200</p>
-        <h3 className="money-card__heading">Budget</h3>
+        <h3 className="money-card__money">£1,200</h3>
+        <p className="money-card__heading">Budget</p>
       </article>
     </section>
   );
