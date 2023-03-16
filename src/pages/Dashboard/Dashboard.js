@@ -7,8 +7,8 @@ const Dashboard = () => {
       <h1 className="dashboard__heading">Dashboard</h1>
 
       <section className="hero">
-        <h2 className="hero__heading">Current Balance</h2>
-        <p className="hero__balance">£420,000</p>
+        <p className="hero__heading">Current Balance</p>
+        <h2 className="hero__balance">£420,000</h2>
       </section>
 
       <MoneyCards />

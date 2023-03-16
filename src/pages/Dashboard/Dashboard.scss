@@ -12,5 +12,12 @@
 }
 
 .hero {
-  padding: 0.5rem 0 3rem 0;
+  padding: 0.5rem 0 3rem 1rem;
+  margin: 2rem 0;
+  background-color: $primary-persian-orange;
+  border-radius: 1rem;
+
+  &__heading {
+    font-weight: 700;
+  }
 }

@@ -1,13 +1,9 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
-main {
-  width: 100%;
+.landing {
   height: 100vh;
   background: $primary-charcoal;
-}
-
-.landing {
   display: flex;
   width: 100%;
   flex-direction: column;

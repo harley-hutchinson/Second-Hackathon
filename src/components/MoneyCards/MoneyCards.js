@@ -1,21 +1,27 @@
 import "./MoneyCards.scss";
+import moneyBag from "../../assets/icons/Bag of money.svg";
+import cart from "../../assets/icons/Cart.svg";
+import moneyBox from "../../assets/icons/Money box.svg";
 
 const MoneyCards = () => {
   return (
     <section className="money-cards">
       <article className="money-card">
-        <h3 className="money-card__money">£2,000</h3>
-        <p className="money-card__heading">Income</p>
+        <img src={moneyBag} alt="bag of money" className="money-card__img" />
+        <h3 className="money-card__heading">£2,000</h3>
+        <p className="money-card__money">Income</p>
       </article>
 
       <article className="money-card">
-        <h3 className="money-card__money">£1,000</h3>
-        <p className="money-card__heading">Expenses</p>
+        <img src={cart} alt="bag of money" className="money-card__img" />
+        <h3 className="money-card__heading">£1,000</h3>
+        <p className="money-card__money">Expenses</p>
       </article>
 
       <article className="money-card">
-        <h3 className="money-card__money">£1,200</h3>
-        <p className="money-card__heading">Budget</p>
+        <img src={moneyBox} alt="bag of money" className="money-card__img" />
+        <h3 className="money-card__heading">£1,200</h3>
+        <p className="money-card__money">Budget</p>
       </article>
     </section>
   );
