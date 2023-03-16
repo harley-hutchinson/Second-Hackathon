@@ -1,8 +1,10 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 main {
   width: 100%;
   height: 100vh;
-  background: rgb(102, 161, 130);
-  background: linear-gradient(90deg, rgba(102, 161, 130, 1) 100%, rgba(2, 0, 36, 1) 2e4057);
+  background: $primary-charcoal;
 }
 
 .landing {
@@ -16,6 +18,10 @@ main {
   &__top {
     display: flex;
     justify-content: center;
+    &__main-info {
+      text-align: center;
+      color: $primary-text;
+    }
   }
 
   &__bottom {
@@ -28,4 +34,21 @@ main {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+}
+
+.buttom {
+  @include mainButtonBackground;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  border-radius: 1.2rem;
+  background-color: red;
+  color: $primary-text;
+  font-size: 1.6rem;
+  font-weight: 700;
+  height: 4.4rem;
+  min-width: 10rem;
+  max-width: 20rem;
 }
