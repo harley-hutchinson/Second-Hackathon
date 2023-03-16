@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import BudgetModal from "../../components/BudgetModal/BudgetModal";
 import MoneyCards from "../../components/MoneyCards/MoneyCards";
 import "./Dashboard.scss";
@@ -35,9 +35,15 @@ const Dashboard = () => {
       />
 
       <nav className="options">
-        <a className="options__text">In</a>
-        <a className="options__text">All</a>
-        <a className="options__text">Out</a>
+        <NavLink to="in" className="options__text">
+          In
+        </NavLink>
+        <NavLink to="/" className="options__text">
+          All
+        </NavLink>
+        <NavLink to="out" className="options__text">
+          Out
+        </NavLink>
       </nav>
 
       <Outlet />
