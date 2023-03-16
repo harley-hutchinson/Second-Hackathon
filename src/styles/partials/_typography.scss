@@ -1,0 +1,60 @@
+//CUSTOM FONTS
+
+//HEADING FONTS
+@font-face {
+    font-family: "Clash Display";
+    src: url("../../assets/fonts/Clash_Display/ClashDisplay-Regular.ttf") format("TrueType"),
+      url("../../assets/fonts/Clash_Display/alts/ClashDisplay-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: url("../../assets/fonts/Clash_Display/ClashDisplay-Semibold.ttf") format("TrueType"),
+      url("../../assets/fonts/Clash_Display/alts/ClashDisplay-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+//BODY FONTS
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../../assets/fonts/Nunito_Sans/NunitoSans-Regular.ttf") format("TrueType");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../../assets/fonts/Nunito_Sans/NunitoSans-Italic.ttf") format("TrueType");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../../assets/fonts/Nunito_Sans/NunitoSans-SemiBold.ttf") format("TrueType");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../../assets/fonts/Nunito_Sans/NunitoSans-SemiBoldItalic.ttf") format("TrueType");
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../../assets/fonts/Nunito_Sans/NunitoSans-Bold.ttf") format("TrueType");
+    font-weight: 700;
+    font-style:normal;
+}
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("../../assets/fonts/Nunito_Sans/NunitoSans-BoldItalic.ttf") format("TrueType");
+    font-weight: 700;
+    font-style:italic;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Clash Display";
+}
