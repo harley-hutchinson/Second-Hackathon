@@ -1,14 +1,25 @@
 import { Link } from "react-router-dom";
 import "./MainNav.scss";
 
-const MainNav = () => {
+const MainNav = ({ active }) => {
   return (
     <nav className="main-nav">
-      <Link to="/" className="main-nav__link main-nav__link--selected">
+      <Link
+        to="/"
+        className={
+          active === "home"
+            ? "main-nav__link main-nav__link--selected"
+            : "main-nav__link"
+        }
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 43.5 41"
-          className="main-nav__icon main-nav__icon--selected"
+          className={
+            active === "home"
+              ? "main-nav__icon main-nav__icon--selected"
+              : "main-nav__icon"
+          }
         >
           <path
             id="Home"
@@ -19,7 +30,7 @@ const MainNav = () => {
         </svg>
         Home
       </Link>
-      <Link to="#" className="main-nav__link">
+      <Link className="main-nav__link">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 36 44"
@@ -32,11 +43,22 @@ const MainNav = () => {
         </svg>
         Learn
       </Link>
-      <Link to="add/in" className="main-nav__link">
+      <Link
+        to="/add/in"
+        className={
+          active === "add"
+            ? "main-nav__link main-nav__link--selected"
+            : "main-nav__link"
+        }
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 44 44"
-          className="main-nav__icon"
+          className={
+            active === "add"
+              ? "main-nav__icon main-nav__icon--selected"
+              : "main-nav__icon"
+          }
         >
           <path
             d="M453,1243a22,22,0,1,0,22,22A22.025,22.025,0,0,0,453,1243Zm0,41a19,19,0,1,1,19-19A19,19,0,0,1,453,1284Zm8-20h-6v-6a1.5,1.5,0,0,0-3,0v6h-6a1.5,1.5,0,0,0,0,3h6v6a1.5,1.5,0,0,0,3,0v-6h6A1.5,1.5,0,0,0,461,1264Z"
@@ -45,11 +67,22 @@ const MainNav = () => {
         </svg>
         Add
       </Link>
-      <Link to="#" className="main-nav__link">
+      <Link
+        to="/invest"
+        className={
+          active === "invest"
+            ? "main-nav__link main-nav__link--selected"
+            : "main-nav__link"
+        }
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 42.031 41.19"
-          className="main-nav__icon"
+          className={
+            active === "invest"
+              ? "main-nav__icon main-nav__icon--selected"
+              : "main-nav__icon"
+          }
         >
           <path
             d="M209.913,2605.01L210,2580c0-1.01-.481-1.99-1.314-1.99a6.973,6.973,0,0,0-5.939,3.86c-1.059,2.01-1.767,3.15-3.981,3.15-1.65,0-2.157-1.02-3.086-3.74-0.918-2.69-2.176-6.37-6.844-6.37-0.111,0-.21.01-0.317,0.02a1.078,1.078,0,0,0-.179-0.02,1.414,1.414,0,0,0-.359.05c-5.182.5-6.421,5.51-7.513,9.98a30.049,30.049,0,0,1-1.9,5.98,7.32,7.32,0,0,1-.879,1.38,1.487,1.487,0,0,0-.646.72,8.562,8.562,0,0,1-6.079,2.18v-27.88a1.49,1.49,0,1,0-2.979,0l0.031,38.18a1.5,1.5,0,0,0,1.5,1.5H208.9C209.739,2607,210.221,2605.28,209.913,2605.01ZM207,2582v22h-7l-0.241-16.01C205.549,2587.29,204.588,2583.35,207,2582Zm-14.134.27c0.673,1.97,1.768,4.81,4.134,5.73l-0.057,16h-6.982L190,2578C191.635,2578.4,192.067,2579.93,192.866,2582.27Zm-11.634,10.01a32.466,32.466,0,0,0,2.126-6.61c0.93-3.8,1.8-6.71,3.642-7.67l-0.032,26h-6.982l-0.087-9.66A10.582,10.582,0,0,0,181.232,2592.28Zm-10.269,5.97h0.189a12.2,12.2,0,0,0,5.769-1.45l0.072,7.2h-5.985Z"

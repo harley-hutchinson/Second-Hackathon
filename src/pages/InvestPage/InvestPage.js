@@ -2,6 +2,7 @@ import "./InvestPage.scss";
 import { GET_US_STOCK } from "../../utils/apiCalls.mjs";
 import { NavLink, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
+import MainNav from "../../components/MainNav/MainNav";
 
 export const InvestPage = () => {
   const [stockUs, setStockUs] = useState(null);
@@ -11,7 +12,6 @@ export const InvestPage = () => {
       try {
         const { data } = await GET_US_STOCK();
         setStockUs(data.splice(0, 99));
-        console.log(stockUs);
       } catch (error) {
         console.log(error);
       }
@@ -19,8 +19,6 @@ export const InvestPage = () => {
 
     getUsStocks();
   }, []);
-
-  console.log(stockUs);
 
   // const usStocks = stockUs.map((stock) => {
   //   return <p>test</p>;
@@ -40,7 +38,7 @@ export const InvestPage = () => {
                 US
               </NavLink>
               <NavLink to="eurpoe" className="options__text">
-                Eurpoe
+                Europe
               </NavLink>
             </ul>
           </nav>
@@ -57,6 +55,7 @@ export const InvestPage = () => {
             })}
         </section>
       </main>
+      <MainNav active={"invest"} />
     </>
   );
 };

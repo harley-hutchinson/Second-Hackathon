@@ -18,7 +18,7 @@ const AddPage = () => {
 
         <Outlet />
       </main>
-      <MainNav />
+      <MainNav active={"add"} />
     </>
   );
 };
