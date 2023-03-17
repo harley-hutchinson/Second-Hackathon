@@ -6,8 +6,8 @@
 .app{
     width: 32rem;
     position: relative;
-    background: #2e4057;
-    min-height: 100vh;
+    background: $primary-white;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
