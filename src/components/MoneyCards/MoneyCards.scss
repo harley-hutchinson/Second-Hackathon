@@ -1,4 +1,32 @@
-.money-cards {
-  display: flex;
-  justify-content: space-between;
+.money {
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-card {
+    border: 0.1px solid #cdd6dd;
+    width: 27%;
+    background-color: #395e66;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 4px 2px black;
+
+    &__img {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(58deg)
+        brightness(105%) contrast(103%);
+      margin-top: 1rem;
+      height: 3rem;
+    }
+
+    &__heading {
+      margin: 1rem 0 0.5rem;
+    }
+
+    &__money {
+      margin: 0 0 1rem;
+    }
+  }
 }

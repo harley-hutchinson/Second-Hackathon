@@ -1,44 +1,44 @@
 @use "../../styles/partials/typography";
 @use "../../styles/partials/variables" as *;
 
-.main-nav{
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  height: 6rem;
+  background-color: hsl(214, 31%, 20%);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+
+  &__link {
     display: flex;
-    justify-content: space-around;
-    height: 6rem;
-    background-color: hsl(214, 31%, 20%);
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    position: fixed;
-    bottom: 0px;
-    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 17%;
+    padding-top: 0.4rem;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
 
-    &__link{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 100%;
-        width: 17%;
-        padding-top: 0.4rem;
-        font-size: 1rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-        font-weight: 600;
-
-        &--selected{
-            color: $primary-lightgreen;
-            font-weight: 700;
-        }
+    &--selected {
+      color: $primary-lightgreen;
+      font-weight: 700;
     }
+  }
 
-    &__icon{
-        height: 1.8rem;
-        width: auto;
-        fill: white;
+  &__icon {
+    height: 1.8rem;
+    width: auto;
+    fill: white;
 
-        &--selected{
-            fill:$primary-lightgreen;
-        }
+    &--selected {
+      fill: $primary-lightgreen;
     }
+  }
 }
