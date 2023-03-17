@@ -1,7 +1,7 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
-.InvestPage {
+.invest-page {
   padding: 1.2rem 1.6rem 6rem;
   background-color: $primary-charcoal;
   color: $primary-text;
@@ -10,25 +10,40 @@
     text-align: center;
     margin: 0;
   }
-}
 
-.hero {
-  display: flex;
-  width: 100%;
-  margin-top: 4vh;
-  background-color: #395e66;
-  border-radius: 2rem;
-  margin-top: 2rem;
-}
-
-.hero-list {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 0;
-  &__item {
-    text-decoration: none;
-    list-style: none;
+  &__hero {
     display: flex;
+    width: 100%;
+    margin-top: 4vh;
+    background-color: #395e66;
+    border-radius: 2rem;
+    margin-top: 2rem;
+
+    &-list {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      padding: 0;
+
+      &__item {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+      }
+    }
+  }
+}
+
+.invest-card {
+  margin: 1.6rem 0;
+  padding: 1rem;
+  flex-basis: 20%;
+  color: #05243a;
+  background-color: rgba(169, 184, 219, 0.54);
+  border: 3px solid black;
+  border-radius: 15px;
+
+  &__title {
+    text-align: center;
   }
 }
