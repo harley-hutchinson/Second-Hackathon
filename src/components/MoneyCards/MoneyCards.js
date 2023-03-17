@@ -1,7 +1,7 @@
 import "./MoneyCards.scss";
 import moneyBag from "../../assets/icons/Bag of money.svg";
 import cart from "../../assets/icons/Cart.svg";
-import moneyBox from "../../assets/icons/Money box.svg";
+import moneyBox from "../../assets/icons/Money-box.svg";
 
 const MoneyCards = ({ modalOpenHandler, budget }) => {
   return (

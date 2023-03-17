@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainNav from "./components/MainNav/MainNav";
 import { LandingPage } from "./pages/LandingPage/LandingPage";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DashboardIn from "./pages/Dashboard/DashboardIn";
 import DashboardOut from "./pages/Dashboard/DashboardOut";
 import DashboardAll from "./pages/Dashboard/DashboardAll";
@@ -19,7 +18,6 @@ const App = () => {
         </Route>
         <Route path="landing-page" element={<LandingPage />} />
       </Routes>
-      <MainNav />
     </BrowserRouter>
   );
 };
