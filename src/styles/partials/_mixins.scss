@@ -1,0 +1,27 @@
+@mixin mainButtonBackground {
+  background-image: linear-gradient(
+    90deg,
+    hsl(148deg 21% 46%) 0%,
+    hsl(146deg 21% 46%) 6%,
+    hsl(143deg 20% 47%) 11%,
+    hsl(141deg 20% 48%) 17%,
+    hsl(138deg 20% 49%) 22%,
+    hsl(135deg 19% 49%) 27%,
+    hsl(132deg 19% 50%) 32%,
+    hsl(128deg 19% 51%) 37%,
+    hsl(124deg 19% 52%) 42%,
+    hsl(120deg 18% 52%) 46%,
+    hsl(116deg 19% 53%) 51%,
+    hsl(112deg 20% 53%) 56%,
+    hsl(108deg 21% 53%) 60%,
+    hsl(105deg 22% 53%) 64%,
+    hsl(101deg 23% 53%) 69%,
+    hsl(98deg 24% 54%) 73%,
+    hsl(95deg 25% 54%) 78%,
+    hsl(91deg 26% 54%) 82%,
+    hsl(89deg 27% 54%) 86%,
+    hsl(86deg 28% 54%) 91%,
+    hsl(83deg 29% 54%) 95%,
+    hsl(80deg 30% 54%) 100%
+  );
+}
