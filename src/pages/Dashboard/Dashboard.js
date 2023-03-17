@@ -101,7 +101,7 @@ const Dashboard = () => {
 
         <Outlet />
       </main>
-      <MainNav />
+      <MainNav active={"home"} />
     </>
   );
 };

@@ -1,14 +1,25 @@
 import { Link } from "react-router-dom";
 import "./MainNav.scss";
 
-const MainNav = () => {
+const MainNav = ({ active }) => {
   return (
     <nav className="main-nav">
-      <Link to="/" className="main-nav__link main-nav__link--selected">
+      <Link
+        to="/"
+        className={
+          active === "home"
+            ? "main-nav__link main-nav__link--selected"
+            : "main-nav__link"
+        }
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 43.5 41"
-          className="main-nav__icon main-nav__icon--selected"
+          className={
+            active === "home"
+              ? "main-nav__icon main-nav__icon--selected"
+              : "main-nav__icon"
+          }
         >
           <path
             id="Home"
@@ -32,11 +43,22 @@ const MainNav = () => {
         </svg>
         Learn
       </Link>
-      <Link to="add/in" className="main-nav__link">
+      <Link
+        to="add/in"
+        className={
+          active === "add"
+            ? "main-nav__link main-nav__link--selected"
+            : "main-nav__link"
+        }
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 44 44"
-          className="main-nav__icon"
+          className={
+            active === "add"
+              ? "main-nav__icon main-nav__icon--selected"
+              : "main-nav__icon"
+          }
         >
           <path
             d="M453,1243a22,22,0,1,0,22,22A22.025,22.025,0,0,0,453,1243Zm0,41a19,19,0,1,1,19-19A19,19,0,0,1,453,1284Zm8-20h-6v-6a1.5,1.5,0,0,0-3,0v6h-6a1.5,1.5,0,0,0,0,3h6v6a1.5,1.5,0,0,0,3,0v-6h6A1.5,1.5,0,0,0,461,1264Z"
