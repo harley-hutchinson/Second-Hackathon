@@ -2,3 +2,13 @@
 @use "./styles/partials/mixins" as *;
 @use "./styles/partials/typography" as *;
 @use "./styles/partials/variables" as *;
+
+.app{
+    width: 32rem;
+    position: relative;
+    background: #2e4057;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
