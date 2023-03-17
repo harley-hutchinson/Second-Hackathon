@@ -12,25 +12,31 @@ const Dashboard = () => {
   const [showModal, setShowModal] = useState(false);
   const [budget, setBudget] = useState("Set");
   const [balance, setBalance] = useState(0);
+  const [income, setIncome] = useState(0);
+  const [out, setOut] = useState(0);
 
   const calcBalance = (transactions) => {
-    let bal = 0;
+    let income = 0;
+    let out = 0;
     transactions.forEach((transaction) => {
       if (transaction.isIncome) {
-        bal += Number(transaction.amount);
+        income += Number(transaction.amount);
       } else {
-        bal -= Number(transaction.amount);
+        out += Number(transaction.amount);
       }
     });
 
-    return bal;
+    const bal = income - out;
+    return [bal, income, out];
   };
 
   useEffect(() => {
     const getTransactions = async () => {
       try {
         const { data } = await GET_ALL_TRANSACTIONS();
-        setBalance(calcBalance(data));
+        setBalance(calcBalance(data)[0]);
+        setIncome(calcBalance(data)[1]);
+        setOut(calcBalance(data)[2]);
       } catch (error) {
         console.log(error);
       }
@@ -68,7 +74,12 @@ const Dashboard = () => {
           />
         </section>
 
-        <MoneyCards modalOpenHandler={modalOpenHandler} budget={budget} />
+        <MoneyCards
+          modalOpenHandler={modalOpenHandler}
+          budget={budget}
+          income={income}
+          out={out}
+        />
 
         <BudgetModal
           show={showModal}
