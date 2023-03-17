@@ -12,7 +12,6 @@ const Dashboard = () => {
   const [showModal, setShowModal] = useState(false);
   const [budget, setBudget] = useState("Set");
   const [balance, setBalance] = useState(0);
-  const [transactions, setTransactions] = useState();
 
   const calcBalance = (transactions) => {
     let bal = 0;
@@ -31,7 +30,6 @@ const Dashboard = () => {
     const getTransactions = async () => {
       try {
         const { data } = await GET_ALL_TRANSACTIONS();
-        setTransactions(data);
         setBalance(calcBalance(data));
       } catch (error) {
         console.log(error);
