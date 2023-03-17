@@ -8,9 +8,9 @@
     background-color: hsl(214, 31%, 20%);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    position: fixed;
+    position: sticky;
     bottom: 0px;
-    width: 100vw;
+    width: 100%;
 
     &__link{
         display: flex;

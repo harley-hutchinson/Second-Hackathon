@@ -1,10 +1,5 @@
 import { Link } from "react-router-dom";
 import "./MainNav.scss";
-import iconHome from "../../assets/icons/Home.svg";
-import iconEdu from "../../assets/icons/Book.svg";
-import iconAdd from "../../assets/icons/Add-1.svg";
-import iconInvest from "../../assets/icons/Chart-1.svg";
-import iconProfile from "../../assets/icons/user.svg";
 
 const MainNav = () => {
   return (
