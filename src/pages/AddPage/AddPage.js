@@ -8,7 +8,7 @@ const AddPage = () => {
       <main className="add">
         <h1 className="add__heading">Add</h1>
         <nav className="add-options">
-          <NavLink to="" className="add-options__text">
+          <NavLink to="in" className="add-options__text">
             In
           </NavLink>
           <NavLink to="out" className="add-options__text">

@@ -1,8 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { POST_TRANSACTION } from "../../utils/apiCalls.mjs";
 import "./AddPageIn.scss";
 
 const AddPageIn = () => {
+  const navigate = useNavigate();
+
   const [inFormFields, setInFormFields] = useState({
     amount: "",
     title: "",
@@ -29,6 +32,10 @@ const AddPageIn = () => {
     } catch (error) {
       console.log(error);
     }
+
+    setTimeout(() => {
+      navigate("/");
+    }, 1000);
   };
 
   const handleInFormChange = (e) => {
@@ -47,6 +54,7 @@ const AddPageIn = () => {
         placeholder="Amount..."
         value={inFormFields.amount}
         onChange={handleInFormChange}
+        className="add-in__form__input"
       />
 
       <label htmlFor="title">Enter title</label>
@@ -56,6 +64,7 @@ const AddPageIn = () => {
         placeholder="Title..."
         value={inFormFields.title}
         onChange={handleInFormChange}
+        className="add-in__form__input"
       />
 
       <label htmlFor="category">Enter category</label>
@@ -65,6 +74,7 @@ const AddPageIn = () => {
         placeholder="Category..."
         value={inFormFields.category}
         onChange={handleInFormChange}
+        className="add-in__form__input"
       />
 
       <label htmlFor="desc">Enter description</label>
@@ -74,9 +84,12 @@ const AddPageIn = () => {
         placeholder="Description..."
         value={inFormFields.desc}
         onChange={handleInFormChange}
+        className="add-in__form__input"
       />
 
-      <button type="submit">Add</button>
+      <button type="submit" className="add-in__form__submit">
+        Add
+      </button>
     </form>
   );
 };

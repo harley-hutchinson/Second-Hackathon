@@ -1,8 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { POST_TRANSACTION } from "../../utils/apiCalls.mjs";
 import "./AddPageOut.scss";
 
 const AddPageOut = () => {
+  const navigate = useNavigate();
+
   const [outFormFields, setOutFormFields] = useState({
     amount: "",
     title: "",
@@ -29,6 +32,10 @@ const AddPageOut = () => {
     } catch (error) {
       console.log(error);
     }
+
+    setTimeout(() => {
+      navigate("/");
+    }, 1000);
   };
 
   const handleInFormChange = (e) => {
@@ -46,6 +53,7 @@ const AddPageOut = () => {
         placeholder="Amount..."
         value={outFormFields.amount}
         onChange={handleInFormChange}
+        className="add-out__form__input"
       />
 
       <label htmlFor="title">Enter title</label>
@@ -55,6 +63,7 @@ const AddPageOut = () => {
         placeholder="Title..."
         value={outFormFields.title}
         onChange={handleInFormChange}
+        className="add-out__form__input"
       />
 
       <label htmlFor="category">Enter category</label>
@@ -64,6 +73,7 @@ const AddPageOut = () => {
         placeholder="Category..."
         value={outFormFields.category}
         onChange={handleInFormChange}
+        className="add-out__form__input"
       />
 
       <label htmlFor="desc">Enter description</label>
@@ -73,9 +83,12 @@ const AddPageOut = () => {
         placeholder="Description..."
         value={outFormFields.desc}
         onChange={handleInFormChange}
+        className="add-out__form__input"
       />
 
-      <button type="submit">Add</button>
+      <button type="submit" className="add-out__form__submit">
+        Add
+      </button>
     </form>
   );
 };

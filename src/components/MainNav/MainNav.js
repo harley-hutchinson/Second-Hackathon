@@ -32,7 +32,7 @@ const MainNav = () => {
         </svg>
         Learn
       </Link>
-      <Link to="add" className="main-nav__link">
+      <Link to="add/in" className="main-nav__link">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 44 44"
