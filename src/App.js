@@ -1,4 +1,6 @@
 import "./App.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainNav from "./components/MainNav/MainNav";
 import { LandingPage } from "./pages/LandingPage/LandingPage";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -17,6 +19,7 @@ const App = () => {
         </Route>
         <Route path="landing-page" element={<LandingPage />} />
       </Routes>
+      <MainNav />
     </BrowserRouter>
   );
 };
