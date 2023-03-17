@@ -1,7 +1,44 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 .dashboard {
-  padding: 0 1.6rem;
+  padding: 1.2rem 1.6rem 6rem;
+  background-color: $primary-charcoal;
+  color: $primary-text;
 
   &__heading {
     text-align: center;
+    margin: 0;
   }
+}
+
+.hero {
+  padding: 0.5rem 0 3rem 1rem;
+  margin: 2rem 0;
+  background-color: $primary-persian-orange;
+  border-radius: 1rem;
+
+  &__heading {
+    font-weight: 700;
+  }
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  background-color: #395e66;
+  border-radius: 2rem;
+  margin-top: 2rem;
+
+  &__text {
+    padding: 1rem 4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+}
+
+.active {
+  @include mainButtonBackground;
+  border-radius: 2rem;
 }
