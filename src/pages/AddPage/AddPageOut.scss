@@ -1,0 +1,21 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.add-out {
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+      margin-bottom: 1rem;
+    }
+
+    &__submit {
+      @include mainButtonBackground;
+      margin-top: 1rem;
+      border: none;
+      padding: 1rem 4rem;
+      border-radius: 2rem;
+    }
+  }
+}
