@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import DashboardIn from "./pages/Dashboard/DashboardIn";
 import DashboardOut from "./pages/Dashboard/DashboardOut";
 import DashboardAll from "./pages/Dashboard/DashboardAll";
+import { InvestPage } from "./pages/InvestPage/InvestPage";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
             <Route path="in" element={<DashboardIn />} />
             <Route path="out" element={<DashboardOut />} />
           </Route>
+          <Route path="invest" element={<InvestPage />} />
           <Route path="landing-page" element={<LandingPage />} />
         </Routes>
       </BrowserRouter>

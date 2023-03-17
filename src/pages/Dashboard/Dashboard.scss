@@ -13,13 +13,19 @@
 }
 
 .hero {
-  padding: 0.5rem 0 3rem 1rem;
+  padding: 2rem 1.5rem;
   margin: 2rem 0;
   background-color: $primary-persian-orange;
   border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
 
   &__heading {
     font-weight: 700;
+  }
+
+  &__emotion {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(58deg) brightness(105%) contrast(103%);
   }
 }
 
