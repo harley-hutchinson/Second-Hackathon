@@ -8,6 +8,10 @@ import DashboardAll from "./pages/Dashboard/DashboardAll";
 import AddPage from "./pages/AddPage/AddPage";
 import AddPageIn from "./pages/AddPage/AddPageIn";
 import AddPageOut from "./pages/AddPage/AddPageOut";
+import { InvestPage } from "./pages/InvestPage/InvestPage";
+import { InvestPageUs } from "./pages/InvestPage/InvestPageUs";
+import { InvestPageEurpoe } from "./pages/InvestPage/InvestPageEurpoe";
+import { InvestPageAll } from "./pages/InvestPage/InvestPageAll";
 
 const App = () => {
   return (
@@ -22,6 +26,11 @@ const App = () => {
           <Route path="add" element={<AddPage />}>
             <Route path="in" element={<AddPageIn />} />
             <Route path="out" element={<AddPageOut />} />
+          </Route>
+          <Route path="invest" element={<InvestPage />}>
+            <Route path="all" element={<InvestPageAll />} />
+            <Route path="us" element={<InvestPageUs />} />
+            <Route path="eurpoe" element={<InvestPageEurpoe />} />
           </Route>
           <Route path="landing-page" element={<LandingPage />} />
         </Routes>
