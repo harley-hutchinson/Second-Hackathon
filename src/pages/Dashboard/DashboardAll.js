@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import TransactionCard from "../../components/TransactionCard/TransactionCard";
-import { GET_TRANSACTIONS } from "../../utils/apiCalls.mjs";
+import { GET_ALL_TRANSACTIONS } from "../../utils/apiCalls.mjs";
 import "./DashboardAll.scss";
 
 const DashboardAll = () => {
@@ -9,8 +9,7 @@ const DashboardAll = () => {
   useEffect(() => {
     const getTransactions = async () => {
       try {
-        const { data } = await GET_TRANSACTIONS();
-        console.log(data);
+        const { data } = await GET_ALL_TRANSACTIONS();
         setTransactions(data);
       } catch (error) {
         console.log(error);

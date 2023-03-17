@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import BudgetModal from "../../components/BudgetModal/BudgetModal";
 import MainNav from "../../components/MainNav/MainNav";
 import MoneyCards from "../../components/MoneyCards/MoneyCards";

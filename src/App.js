@@ -1,6 +1,5 @@
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainNav from "./components/MainNav/MainNav";
 import { LandingPage } from "./pages/LandingPage/LandingPage";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import DashboardIn from "./pages/Dashboard/DashboardIn";
